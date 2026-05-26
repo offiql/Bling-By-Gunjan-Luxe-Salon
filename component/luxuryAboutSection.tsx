@@ -1,234 +1,299 @@
+import { location } from "./helperData";
+import saloon_1 from "@/assests/aboutSalon/salon_1.jpeg";
+import saloon_2 from "@/assests/aboutSalon/salon_2.jpeg";
+
 export default function LuxuryAboutSection() {
   return (
-    <section className="relative overflow-hidden bg-[#fff8f6] py-16 sm:py-20 lg:py-28">
+    <section id="#about"  className="relative overflow-hidden bg-[#F7EFE5] py-14 sm:py-18 lg:py-24 xl:py-28">
 
-      <div className="absolute left-[-180px] top-[-140px] h-[420px] w-[420px] rounded-full bg-[#7e4b56]/10 blur-3xl"></div>
+      <div className="absolute left-[-180px] top-[-120px] h-[380px] w-[380px] rounded-full bg-[#5B1E2D]/10 blur-3xl"></div>
 
-      <div className="absolute bottom-[-220px] right-[-220px] h-[500px] w-[500px] rounded-full bg-[#b97885]/12 blur-3xl"></div>
+      <div className="absolute bottom-[-220px] right-[-180px] h-[420px] w-[420px] rounded-full bg-[#D4A373]/10 blur-3xl"></div>
 
-      <div className="absolute inset-0 opacity-[0.04] mix-blend-overlay bg-[radial-gradient(#7e4b56_0.7px,transparent_0.7px)] bg-[size:14px_14px]"></div>
+      <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[radial-gradient(#5B1E2D_0.8px,transparent_0.8px)] bg-[size:14px_14px]"></div>
 
       <div className="mx-auto max-w-[1750px] px-4 sm:px-6 lg:px-8">
 
-        <div className="grid items-center gap-16 lg:grid-cols-2 xl:gap-24">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr] xl:gap-20">
 
           <div className="relative order-2 lg:order-1">
 
-            <div className="grid grid-cols-2 gap-4 sm:gap-6">
+            <div className="relative grid grid-cols-2 gap-3 sm:gap-5">
 
-              <div className="space-y-4 sm:space-y-6">
+              <div className="space-y-3 sm:space-y-5">
 
-                <div className="group overflow-hidden rounded-[28px] border border-white/40 bg-white p-2 shadow-[0_28px_80px_rgba(126,75,86,0.16)] transition-all duration-500 hover:-translate-y-2 sm:rounded-[38px]">
+                <div className="group relative overflow-hidden rounded-[22px] border border-white/70 bg-white p-2 shadow-[0_22px_60px_rgba(91,30,45,0.10)] sm:rounded-[28px]">
+
                   <img
-                    src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop"
+                    src={saloon_1.src}
                     alt="Luxury Makeup"
-                    className="h-[220px] w-full rounded-[22px] object-cover transition-all duration-700 group-hover:scale-105 sm:h-[320px] sm:rounded-[32px] lg:h-[390px]"
+                    className="h-[180px] w-full rounded-[18px] object-cover transition-all duration-700 group-hover:scale-105 sm:h-[260px] sm:rounded-[22px] lg:h-[360px] xl:h-[420px]"
                   />
+
                 </div>
 
-                <div className="group overflow-hidden rounded-[28px] border border-white/40 bg-white p-2 shadow-[0_28px_80px_rgba(126,75,86,0.16)] transition-all duration-500 hover:-translate-y-2 sm:rounded-[38px]">
+                <div className="group relative overflow-hidden rounded-[22px] border border-white/70 bg-white p-2 shadow-[0_22px_60px_rgba(91,30,45,0.10)] sm:rounded-[28px]">
+
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="h-[150px] w-full rounded-[18px] object-cover transition-all duration-700 group-hover:scale-105 sm:h-[210px] sm:rounded-[22px] lg:h-[260px] xl:h-[300px]"
+                  >
+                    <source src="/salon_3_v.mp4" type="video/mp4" />
+                  </video>
+
+                  <div className="absolute inset-0 rounded-[22px] bg-gradient-to-t from-[#2B0D14]/45 via-transparent to-transparent sm:rounded-[28px]"></div>
+
+                </div>
+
+              </div>
+
+              <div className="space-y-3 pt-6 sm:space-y-5 sm:pt-12 lg:pt-20">
+
+                <div className="group relative overflow-hidden rounded-[22px] border border-white/70 bg-white p-2 shadow-[0_22px_60px_rgba(91,30,45,0.10)] sm:rounded-[28px]">
+
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="h-[150px] w-full rounded-[18px] object-cover transition-all duration-700 group-hover:scale-105 sm:h-[210px] sm:rounded-[22px] lg:h-[260px] xl:h-[300px]"
+                  >
+                    <source src="/salon_4_v.mp4" type="video/mp4" />
+                  </video>
+
+                  <div className="absolute inset-0 rounded-[22px] bg-gradient-to-t from-[#2B0D14]/45 via-transparent to-transparent sm:rounded-[28px]"></div>
+
+                </div>
+
+                <div className="group relative overflow-hidden rounded-[22px] border border-white/70 bg-white p-2 shadow-[0_22px_60px_rgba(91,30,45,0.10)] sm:rounded-[28px]">
+
                   <img
-                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1200&auto=format&fit=crop"
+                    src={saloon_2.src}
                     alt="Luxury Beauty"
-                    className="h-[180px] w-full rounded-[22px] object-cover transition-all duration-700 group-hover:scale-105 sm:h-[240px] sm:rounded-[32px] lg:h-[290px]"
+                    className="h-[180px] w-full rounded-[18px] object-cover transition-all duration-700 group-hover:scale-105 sm:h-[260px] sm:rounded-[22px] lg:h-[360px] xl:h-[420px]"
                   />
+
                 </div>
 
               </div>
 
-              <div className="space-y-4 pt-8 sm:space-y-6 sm:pt-14 lg:pt-24">
+              <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 xl:block">
 
-                <div className="group overflow-hidden rounded-[28px] border border-white/40 bg-white p-2 shadow-[0_28px_80px_rgba(126,75,86,0.16)] transition-all duration-500 hover:-translate-y-2 sm:rounded-[38px]">
-                  <img
-                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop"
-                    alt="Luxury Salon"
-                    className="h-[180px] w-full rounded-[22px] object-cover transition-all duration-700 group-hover:scale-105 sm:h-[240px] sm:rounded-[32px] lg:h-[290px]"
-                  />
-                </div>
+                <div className="rounded-[28px] border border-white/70 bg-white/90 px-7 py-6 shadow-[0_30px_80px_rgba(91,30,45,0.16)] backdrop-blur-2xl">
 
-                <div className="group overflow-hidden rounded-[28px] border border-white/40 bg-white p-2 shadow-[0_28px_80px_rgba(126,75,86,0.16)] transition-all duration-500 hover:-translate-y-2 sm:rounded-[38px]">
-                  <img
-                    src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop"
-                    alt="Bride Makeup"
-                    className="h-[220px] w-full rounded-[22px] object-cover transition-all duration-700 group-hover:scale-105 sm:h-[320px] sm:rounded-[32px] lg:h-[390px]"
-                  />
-                </div>
+                  <div className="flex items-center gap-7">
 
-              </div>
+                    <div>
 
-            </div>
+                      <p className="text-[8px] font-bold uppercase tracking-[0.24em] text-[#D4A373]">
+                        Experience
+                      </p>
 
-            <div className="absolute -bottom-6 left-1/2 hidden -translate-x-1/2 rounded-[30px] border border-white/50 bg-white/85 px-8 py-5 shadow-[0_30px_80px_rgba(126,75,86,0.18)] backdrop-blur-2xl lg:block">
+                      <h4 className="mt-1 text-[2.2rem] font-black text-[#5B1E2D]">
+                        12+
+                      </h4>
 
-              <div className="flex items-center gap-8">
+                      <p className="text-[12px] text-[#5C4A4A]">
+                        Years Expertise
+                      </p>
 
-                <div>
-                  <h4 className="text-[2.1rem] font-black text-[#8c5360]">
-                    12+
-                  </h4>
+                    </div>
 
-                  <p className="text-sm font-semibold text-[#5d4f52]">
-                    Years Experience
-                  </p>
-                </div>
+                    <div className="h-14 w-[1px] bg-[#5B1E2D]/10"></div>
 
-                <div className="h-12 w-[1px] bg-[#7e4b56]/10"></div>
+                    <div>
 
-                <div>
-                  <h4 className="text-[2.1rem] font-black text-[#8c5360]">
-                    5K+
-                  </h4>
+                      <p className="text-[8px] font-bold uppercase tracking-[0.24em] text-[#D4A373]">
+                        Clients
+                      </p>
 
-                  <p className="text-sm font-semibold text-[#5d4f52]">
-                    Happy Clients
-                  </p>
+                      <h4 className="mt-1 text-[2.2rem] font-black text-[#5B1E2D]">
+                        5K+
+                      </h4>
+
+                      <p className="text-[12px] text-[#5C4A4A]">
+                        Happy Clients
+                      </p>
+
+                    </div>
+
+                  </div>
+
                 </div>
 
               </div>
+
             </div>
 
           </div>
 
           <div className="relative order-1 lg:order-2">
 
-            <div className="inline-flex items-center rounded-full border border-[#7e4b56]/10 bg-white/80 px-5 py-2.5 shadow-[0_12px_35px_rgba(126,75,86,0.08)] backdrop-blur-xl">
+            <div className="inline-flex items-center rounded-full border border-[#5B1E2D]/10 bg-white/80 px-4 py-2 shadow-[0_8px_22px_rgba(91,30,45,0.05)] backdrop-blur-xl">
 
-              <span className="mr-2 h-2.5 w-2.5 rounded-full bg-[#8c5360]"></span>
+              <span className="mr-2 h-2 w-2 rounded-full bg-[#D4A373]"></span>
 
-              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#8c5360] sm:text-[11px]">
-                About Our Luxury Salon
+              <span className="text-[8px] font-bold uppercase tracking-[0.32em] text-[#5B1E2D] sm:text-[9px]">
+                About Our Salon
               </span>
+
             </div>
 
-            <h2 className="mt-7 max-w-[760px] text-[2.6rem] font-black leading-[0.9] tracking-[-0.09em] text-[#130e0f] sm:text-[4rem] lg:text-[5.5rem] xl:text-[6rem]">
+            <h2 className="mt-5 max-w-[760px] pb-2 text-[2rem] font-black leading-[1.05] tracking-[-0.08em] text-[#1E1616] sm:text-[3rem] lg:text-[4.3rem] xl:text-[5.2rem]">
 
-              Welcome to
+              Luxury Beauty
 
-              <span className="mt-2 block bg-gradient-to-r from-[#7e4b56] via-[#b97885] to-[#efc4bc] bg-clip-text text-transparent">
-                Bling by Gunjan Luxe Salon
+              <span className="mt-2 block bg-gradient-to-r from-[#5B1E2D] via-[#7B2D42] to-[#D4A373] bg-clip-text text-transparent">
+                Crafted With Elegance
               </span>
+
             </h2>
 
-            <p className="mt-7 max-w-[720px] text-[1rem] font-black italic leading-[1.8] text-[#8c5360] sm:text-[1.1rem] lg:text-[1.15rem]">
+            <p className="mt-5 max-w-[680px] text-[13px] font-semibold italic leading-[1.9] text-[#7B2D42] sm:text-[14px] lg:text-[15px]">
               Where luxury meets artistry, and beauty becomes an unforgettable experience.
             </p>
 
-            <div className="mt-8 space-y-6">
+            <div className="mt-6 space-y-4">
 
-              <p className="text-[15px] leading-[2] text-[#5d4f52] sm:text-[16px] lg:text-[17px]">
-                Founded by celebrity makeup artist Gunjan Sajwan, with over
-                12 years of expertise in the beauty and fashion industry,
-                Bling by Gunjan Luxe Salon is Dehradun’s newest destination
-                for premium salon, makeup, and luxury beauty services.
+              <p className="text-[13px] leading-[1.95] text-[#5C4A4A] sm:text-[14px] lg:text-[15px]">
+                Founded by celebrity makeup artist Gunjan Sajwan,
+                Bling by Gunjan Luxe Salon is Dehradun’s premium
+                destination for bridal artistry, salon luxury,
+                and timeless beauty experiences.
               </p>
 
-              <p className="text-[15px] leading-[2] text-[#5d4f52] sm:text-[16px] lg:text-[17px]">
-                At Bling by Gunjan, we believe beauty is personal, powerful,
-                and timeless. Every service is thoughtfully designed to offer
-                not just transformation, but confidence, elegance, and
-                self-expression.
-              </p>
-
-              <p className="text-[15px] leading-[2] text-[#5d4f52] sm:text-[16px] lg:text-[17px]">
-                From flawless bridal makeovers to indulgent hair, skin, and
-                spa experiences, our salon brings together artistry, luxury,
-                and personalized care under one roof.
-              </p>
-
-              <p className="text-[15px] leading-[2] text-[#5d4f52] sm:text-[16px] lg:text-[17px]">
-                Our team of trained professionals, premium products, and
-                sophisticated ambience create an experience that is modern,
-                relaxing, and truly unforgettable.
+              <p className="text-[13px] leading-[1.95] text-[#5C4A4A] sm:text-[14px] lg:text-[15px]">
+                From flawless bridal transformations to luxury hair,
+                skin, and spa experiences, every service is designed
+                to deliver confidence, elegance, and sophistication.
               </p>
 
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-3">
+            <div className="mt-7 flex flex-wrap gap-2">
 
-              <div className="rounded-full border border-[#7e4b56]/10 bg-white/80 px-5 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-[#8c5360] shadow-[0_12px_35px_rgba(126,75,86,0.06)] backdrop-blur-xl">
-                Luxury Bridal Studio
-              </div>
-
-              <div className="rounded-full border border-[#7e4b56]/10 bg-white/80 px-5 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-[#8c5360] shadow-[0_12px_35px_rgba(126,75,86,0.06)] backdrop-blur-xl">
-                Celebrity Makeup Artist
-              </div>
-
-              <div className="rounded-full border border-[#7e4b56]/10 bg-white/80 px-5 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-[#8c5360] shadow-[0_12px_35px_rgba(126,75,86,0.06)] backdrop-blur-xl">
-                Premium Beauty Services
-              </div>
+              {[
+                "Luxury Bridal Studio",
+                "Celebrity Makeup Artist",
+                "Premium Beauty Services",
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="rounded-full border border-[#5B1E2D]/10 bg-white/80 px-3.5 py-2 text-[8px] font-bold uppercase tracking-[0.16em] text-[#5B1E2D] shadow-[0_8px_20px_rgba(91,30,45,0.04)] backdrop-blur-xl sm:px-4 sm:text-[9px]"
+                >
+                  {item}
+                </div>
+              ))}
 
             </div>
 
-            <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
 
-              <div className="group rounded-[30px] border border-[#7e4b56]/10 bg-white/80 p-6 shadow-[0_22px_60px_rgba(126,75,86,0.08)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_28px_75px_rgba(126,75,86,0.14)]">
+              <a
+                href={location}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden rounded-[22px] border border-[#5B1E2D]/10 bg-white/80 p-4 shadow-[0_15px_40px_rgba(91,30,45,0.06)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(91,30,45,0.10)] sm:p-5"
+              >
 
-                <div className="flex h-14 w-14 items-center justify-center rounded-[20px] bg-gradient-to-br from-[#7e4b56] via-[#b97885] to-[#efc4bc] text-white shadow-[0_18px_35px_rgba(126,75,86,0.24)]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 5a2 2 0 012-2h3.28a2 2 0 011.894 1.368l1.09 3.272a2 2 0 01-.45 2.11l-1.517 1.518a16.042 16.042 0 006.586 6.586l1.518-1.517a2 2 0 012.11-.45l3.272 1.09A2 2 0 0121 18.72V22a2 2 0 01-2 2h-1C9.163 24 0 14.837 0 3V2a2 2 0 012-2h1z"
-                    />
-                  </svg>
+                <div className="absolute right-[-25px] top-[-25px] h-[80px] w-[80px] rounded-full bg-[#D4A373]/10 blur-3xl"></div>
+
+                <div className="relative flex items-center gap-3">
+
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] bg-gradient-to-r from-[#5B1E2D] via-[#7B2D42] to-[#D4A373] text-white shadow-[0_10px_25px_rgba(91,30,45,0.20)]">
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2.2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+
+                  </div>
+
+                  <div>
+
+                    <p className="text-[7px] font-bold uppercase tracking-[0.18em] text-[#D4A373]">
+                      Visit Salon
+                    </p>
+
+                    <h4 className="mt-1 text-[14px] font-black text-[#1E1616]">
+                      Get Directions
+                    </h4>
+
+                    <p className="mt-1 text-[11px] text-[#5C4A4A]">
+                      Dehradun, Uttarakhand
+                    </p>
+
+                  </div>
+
                 </div>
 
-                <h4 className="mt-5 text-[13px] font-black uppercase tracking-[0.18em] text-[#8c5360]">
-                  Contact Us
-                </h4>
+              </a>
 
-                <p className="mt-2 text-[1.15rem] font-black text-[#130e0f]">
-                  +91 98765 43210
-                </p>
+              <div className="group relative overflow-hidden rounded-[22px] border border-[#5B1E2D]/10 bg-white/80 p-4 shadow-[0_15px_40px_rgba(91,30,45,0.06)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(91,30,45,0.10)] sm:p-5">
 
-                <p className="mt-1 text-sm leading-[1.8] text-[#5d4f52]">
-                  Connect with our team for appointments, bridal consultations, and luxury beauty services.
-                </p>
+                <div className="absolute right-[-25px] top-[-25px] h-[80px] w-[80px] rounded-full bg-[#D4A373]/10 blur-3xl"></div>
 
-              </div>
+                <div className="relative flex items-center gap-3">
 
-              <div className="group rounded-[30px] border border-[#7e4b56]/10 bg-white/80 p-6 shadow-[0_22px_60px_rgba(126,75,86,0.08)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_28px_75px_rgba(126,75,86,0.14)]">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] bg-gradient-to-r from-[#5B1E2D] via-[#7B2D42] to-[#D4A373] text-white shadow-[0_10px_25px_rgba(91,30,45,0.20)]">
 
-                <div className="flex h-14 w-14 items-center justify-center rounded-[20px] bg-gradient-to-br from-[#7e4b56] via-[#b97885] to-[#efc4bc] text-white shadow-[0_18px_35px_rgba(126,75,86,0.24)]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2.2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 8v4l3 3"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 22C17.523 22 22 17.523 22 12S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                      />
+                    </svg>
+
+                  </div>
+
+                  <div>
+
+                    <p className="text-[7px] font-bold uppercase tracking-[0.18em] text-[#D4A373]">
+                      Opening Hours
+                    </p>
+
+                    <h4 className="mt-1 text-[14px] font-black text-[#1E1616]">
+                      10 AM — 8 PM
+                    </h4>
+
+                    <p className="mt-1 text-[11px] text-[#5C4A4A]">
+                      Open all days
+                    </p>
+
+                  </div>
+
                 </div>
-
-                <h4 className="mt-5 text-[13px] font-black uppercase tracking-[0.18em] text-[#8c5360]">
-                  Visit Our Salon
-                </h4>
-
-                <p className="mt-2 text-[1.15rem] font-black text-[#130e0f]">
-                  Dehradun, Uttarakhand
-                </p>
-
-                <p className="mt-1 text-sm leading-[1.8] text-[#5d4f52]">
-                  Experience premium ambience, luxury beauty treatments, and personalized artistry in our salon.
-                </p>
 
               </div>
 
@@ -237,7 +302,9 @@ export default function LuxuryAboutSection() {
           </div>
 
         </div>
+
       </div>
+
     </section>
   );
 }

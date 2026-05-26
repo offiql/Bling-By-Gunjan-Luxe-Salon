@@ -1,0 +1,1 @@
+export const location="https://www.google.com/maps?rlz=1C5CHFA_enIN1006IN1006&sca_esv=7d9c60e3220b4d37&sxsrf=ANbL-n4l0xN2TazoopwiROmdl-vPzpXufQ:1779796955210&biw=1440&bih=754&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KQljCuZfzs6iMVRL5xJEtfAR&daddr=Bling+By+Gunjan+Luxe+Salon,+Dhaka+Towers,+GMS+Rd,+near+Olympus+High+School,+Sewla+Kalan,+Majra,+Dehradun,+Uttarakhand+248171";

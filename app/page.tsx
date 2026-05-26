@@ -19,10 +19,10 @@ export default function Home() {
       <LuxuryAboutSection/>
       <FounderSection/>
       <LuxuryServicesSection/>
-      <WhyChooseUsSection/>
+      {/* <WhyChooseUsSection/> */}
       <GallerySection/>
-      <TestimonialsSection/>
-      <PhilosophySection/>
+      {/* <TestimonialsSection/> */}
+      {/* <PhilosophySection/> */}
       <FAQSection/>
       <FooterSection/>
     </div>

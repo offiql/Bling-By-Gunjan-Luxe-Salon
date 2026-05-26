@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-
+import faq1 from "@/assests/faq/faq1.jpeg"
+import faq2 from "@/assests/faq/faq2.jpeg"
+import faq3 from "@/assests/faq/faq3.jpeg"
 export default function FAQSection() {
   const faqs = [
     {
@@ -34,95 +36,115 @@ export default function FAQSection() {
       answer:
         "Absolutely. Every client receives personalized beauty guidance and customized recommendations based on their style, skin type, preferences, and occasion.",
     },
-    {
-      question: "Is the salon suitable for bridal preparations?",
-      answer:
-        "Yes, we have a dedicated bridal beauty experience designed to make brides feel luxurious, confident, elegant, and stress-free on their special day.",
-    },
-    {
-      question: "What makes Bling by Gunjan different?",
-      answer:
-        "Our salon combines celebrity-level artistry, luxury ambience, premium products, hygiene excellence, and personalized care to create timeless beauty experiences.",
-    },
   ];
 
   const [activeFAQ, setActiveFAQ] = useState<number | null>(0);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#fff8f6] via-[#fffdfc] to-white py-16 sm:py-20 lg:py-28">
+    <section
+      id="faq"
+      className="relative overflow-hidden bg-[#F7EFE5] py-12 sm:py-16 lg:py-20"
+    >
 
-      <div className="absolute left-[-200px] top-[-140px] h-[520px] w-[520px] rounded-full bg-[#7e4b56]/10 blur-3xl"></div>
+      <div className="absolute left-[-180px] top-[-140px] h-[360px] w-[360px] rounded-full bg-[#5B1E2D]/10 blur-3xl"></div>
 
-      <div className="absolute bottom-[-240px] right-[-240px] h-[620px] w-[620px] rounded-full bg-[#b97885]/10 blur-3xl"></div>
+      <div className="absolute bottom-[-220px] right-[-220px] h-[420px] w-[420px] rounded-full bg-[#D4A373]/10 blur-3xl"></div>
 
-      <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[radial-gradient(#7e4b56_0.8px,transparent_0.8px)] bg-[size:14px_14px]"></div>
+      <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[radial-gradient(#5B1E2D_0.8px,transparent_0.8px)] bg-[size:14px_14px]"></div>
 
-      <div className="relative mx-auto max-w-[1750px] px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-[1650px] px-4 sm:px-6 lg:px-8">
 
-        <div className="grid gap-14 lg:grid-cols-[0.95fr_1.05fr] xl:gap-24">
+        <div className="grid items-start gap-8 lg:grid-cols-[0.9fr_1.1fr] xl:gap-14">
 
           <div className="relative">
 
-            <div className="inline-flex items-center rounded-full border border-[#7e4b56]/10 bg-white/90 px-5 py-2.5 shadow-[0_12px_35px_rgba(126,75,86,0.06)] backdrop-blur-xl">
+            <div className="inline-flex items-center rounded-full border border-[#5B1E2D]/10 bg-white/80 px-4 py-2 shadow-[0_8px_18px_rgba(91,30,45,0.05)] backdrop-blur-xl">
 
-              <span className="mr-2 h-2.5 w-2.5 rounded-full bg-[#8c5360]"></span>
+              <span className="mr-2 h-2 w-2 rounded-full bg-[#D4A373]"></span>
 
-              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#8c5360] sm:text-[11px]">
+              <span className="text-[7px] font-bold uppercase tracking-[0.3em] text-[#5B1E2D] sm:text-[8px]">
                 Frequently Asked Questions
               </span>
 
             </div>
 
-            <h2 className="mt-8 max-w-[760px] text-[2.8rem] font-black leading-[0.88] tracking-[-0.09em] text-[#140f10] sm:text-[4rem] lg:text-[5.2rem] xl:text-[5.8rem]">
+            <h2 className="mt-4 max-w-[720px] pb-3 text-[1.9rem] font-black leading-[1.06] tracking-[-0.07em] text-[#1E1616] sm:text-[2.9rem] lg:text-[4rem] xl:text-[4.7rem]">
 
-              Everything You Need
-
-              <span className="mt-2 block bg-gradient-to-r from-[#7e4b56] via-[#b97885] to-[#efc4bc] bg-clip-text text-transparent">
-                To Know
+              Everything You
+              <span className="mt-1 block bg-gradient-to-r from-[#5B1E2D] via-[#7B2D42] to-[#D4A373] bg-clip-text pb-1 text-transparent">
+                Need To Know
               </span>
 
             </h2>
 
-            <p className="mt-8 max-w-[680px] text-[15px] leading-[2] text-[#5d4f52] sm:text-[16px] lg:text-[18px]">
+            <p className="mt-4 max-w-[620px] text-[12px] leading-[1.9] text-[#5C4A4A] sm:text-[13px] lg:text-[14px]">
               Explore answers about our luxury beauty experiences,
-              bridal artistry, celebrity makeup, consultations,
-              salon ambience, premium products, and personalized care.
+              bridal artistry, consultations, salon ambience,
+              premium products, and personalized care.
             </p>
 
-            <div className="relative mt-12 overflow-hidden rounded-[40px] border border-white/60 bg-white/90 p-3 shadow-[0_40px_120px_rgba(126,75,86,0.10)] backdrop-blur-2xl">
+            <div className="relative mt-7 overflow-hidden rounded-[28px] border border-[#5B1E2D]/10 bg-white p-2 shadow-[0_20px_60px_rgba(91,30,45,0.08)]">
 
-              <img
-                src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1600&auto=format&fit=crop"
-                alt="Luxury Salon"
-                className="h-[320px] w-full rounded-[32px] object-cover sm:h-[420px] lg:h-[600px]"
-              />
+              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#140f10]/35 via-transparent to-transparent"></div>
+                <div className="overflow-hidden rounded-[20px]">
 
-              <div className="absolute bottom-0 left-0 w-full p-6 sm:p-8">
+                  <img
+                    src={faq1.src}
+                    alt="Luxury Beauty"
+                    className="h-[180px] w-full object-cover transition-all duration-700 hover:scale-105 sm:h-[220px]"
+                  />
 
-                <div className="max-w-[380px] rounded-[28px] border border-white/20 bg-white/10 p-5 shadow-[0_25px_80px_rgba(0,0,0,0.16)] backdrop-blur-2xl">
+                </div>
 
-                  <p className="text-[10px] font-black uppercase tracking-[0.28em] text-white/80">
-                    Bling By Gunjan Luxe Salon
-                  </p>
+                <div className="overflow-hidden rounded-[20px]">
 
-                  <h3 className="mt-3 text-[1.8rem] font-black leading-[0.95] tracking-[-0.05em] text-white sm:text-[2.2rem]">
-                    Luxury Beauty
-                    <span className="mt-1 block">
-                      Crafted Perfectly
-                    </span>
-                  </h3>
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="h-[180px] w-full object-cover transition-all duration-700 hover:scale-105 sm:h-[220px]"
+                  >
+                    <source src="/faq_v-1.mp4" type="video/mp4" />
+                  </video>
+
+                </div>
+
+                <div className="overflow-hidden rounded-[20px] col-span-2 sm:col-span-1">
+
+                  <img
+                    src={faq3.src}
+                    alt="Luxury Salon"
+                    className="h-[180px] w-full object-cover transition-all duration-700 hover:scale-105 sm:h-[220px]"
+                  />
 
                 </div>
 
               </div>
 
+              {/* <div className="absolute inset-x-4 bottom-4 rounded-[22px] border border-white/10 bg-white/10 p-4 shadow-[0_15px_40px_rgba(0,0,0,0.14)] backdrop-blur-2xl sm:inset-x-5 sm:p-5">
+
+                <p className="text-[7px] font-bold uppercase tracking-[0.22em] text-white/80 sm:text-[8px]">
+                  Bling By Gunjan Luxe Salon
+                </p>
+
+                <h3 className="mt-2 pb-1 text-[1.3rem] font-black leading-[1.02] tracking-[-0.05em] text-white sm:text-[1.8rem]">
+
+                  Luxury Beauty
+                  <span className="mt-1 block">
+                    Crafted Perfectly
+                  </span>
+
+                </h3>
+
+              </div> */}
+
             </div>
 
           </div>
 
-          <div className="space-y-5">
+          <div className="space-y-3">
 
             {faqs.map((faq, index) => {
               const isOpen = activeFAQ === index;
@@ -130,10 +152,10 @@ export default function FAQSection() {
               return (
                 <div
                   key={index}
-                  className={`group overflow-hidden rounded-[34px] border transition-all duration-500 ${
+                  className={`group overflow-hidden rounded-[24px] border transition-all duration-500 ${
                     isOpen
-                      ? "border-[#7e4b56]/15 bg-white shadow-[0_35px_100px_rgba(126,75,86,0.10)]"
-                      : "border-[#7e4b56]/10 bg-white/85 shadow-[0_18px_50px_rgba(126,75,86,0.05)] hover:-translate-y-1 hover:shadow-[0_28px_80px_rgba(126,75,86,0.10)]"
+                      ? "border-[#5B1E2D]/10 bg-white shadow-[0_20px_60px_rgba(91,30,45,0.08)]"
+                      : "border-[#5B1E2D]/10 bg-white/80 shadow-[0_12px_35px_rgba(91,30,45,0.04)] hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(91,30,45,0.08)]"
                   }`}
                 >
 
@@ -141,22 +163,22 @@ export default function FAQSection() {
                     onClick={() =>
                       setActiveFAQ(isOpen ? null : index)
                     }
-                    className="flex w-full items-start justify-between gap-5 p-5 text-left sm:p-7 lg:p-8"
+                    className="flex w-full items-start justify-between gap-4 p-4 text-left sm:p-5 lg:p-6"
                   >
 
                     <div className="flex flex-1 items-start">
 
-                      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[22px] bg-gradient-to-br from-[#7e4b56] via-[#b97885] to-[#efc4bc] shadow-[0_20px_45px_rgba(126,75,86,0.24)]">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[16px] bg-gradient-to-br from-[#5B1E2D] via-[#7B2D42] to-[#D4A373] shadow-[0_15px_35px_rgba(91,30,45,0.18)]">
 
-                        <span className="text-[14px] font-black text-white">
+                        <span className="text-[11px] font-black text-white">
                           {String(index + 1).padStart(2, "0")}
                         </span>
 
                       </div>
 
-                      <div className="ml-5 flex-1">
+                      <div className="ml-4 flex-1">
 
-                        <h3 className="text-[1.02rem] font-black leading-[1.5] tracking-[-0.03em] text-[#140f10] sm:text-[1.18rem] lg:text-[1.3rem]">
+                        <h3 className="pb-1 text-[0.95rem] font-black leading-[1.5] tracking-[-0.03em] text-[#1E1616] sm:text-[1.05rem] lg:text-[1.12rem]">
                           {faq.question}
                         </h3>
 
@@ -165,19 +187,19 @@ export default function FAQSection() {
                     </div>
 
                     <div
-                      className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-[18px] border border-[#7e4b56]/10 bg-[#fff8f6] transition-all duration-500 ${
+                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] border border-[#5B1E2D]/10 bg-[#FDF9F7] transition-all duration-500 ${
                         isOpen
-                          ? "rotate-45 bg-gradient-to-br from-[#7e4b56] via-[#b97885] to-[#efc4bc]"
+                          ? "rotate-45 bg-gradient-to-br from-[#5B1E2D] via-[#7B2D42] to-[#D4A373]"
                           : ""
                       }`}
                     >
 
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`h-5 w-5 transition-all duration-500 ${
+                        className={`h-4 w-4 transition-all duration-500 ${
                           isOpen
                             ? "text-white"
-                            : "text-[#8c5360]"
+                            : "text-[#5B1E2D]"
                         }`}
                         fill="none"
                         viewBox="0 0 24 24"
@@ -205,9 +227,9 @@ export default function FAQSection() {
 
                     <div className="overflow-hidden">
 
-                      <div className="border-t border-[#7e4b56]/10 px-5 pb-6 pt-5 sm:px-7 sm:pb-7 lg:px-8 lg:pb-8">
+                      <div className="border-t border-[#5B1E2D]/10 px-4 pb-5 pt-4 sm:px-5 sm:pb-6 lg:px-6">
 
-                        <p className="max-w-[95%] text-[15px] leading-[2] text-[#5d4f52] sm:text-[16px] lg:text-[17px]">
+                        <p className="max-w-[95%] text-[12px] leading-[1.9] text-[#5C4A4A] sm:text-[13px] lg:text-[14px]">
                           {faq.answer}
                         </p>
 
