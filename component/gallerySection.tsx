@@ -110,7 +110,7 @@ export default function GallerySection() {
 
         <div className="mt-10 columns-2 gap-3  mx-auto space-y-3 sm:columns-3  lg:gap-4 lg:space-y-4">
 
-          {galleryItems.map((item, index) => (
+          {galleryItems.map((item:any, index:number) => (
             <div
               key={index}
               className="group relative mb-3 break-inside-avoid overflow-hidden rounded-[30px] border border-[#5B1E2D]/10 bg-white p-2 shadow-[0_18px_50px_rgba(91,30,45,0.06)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_28px_80px_rgba(91,30,45,0.14)] lg:mb-4"
