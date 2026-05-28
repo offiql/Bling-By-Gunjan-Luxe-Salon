@@ -18,19 +18,27 @@ export default function HeroSection() {
         />
       </video>
 
+      <div className="relative z-10 mx-auto flex w-full max-w-[1750px] flex-col items-center justify-start px-4 pb-8 pt-24 sm:px-6 sm:pb-10 sm:pt-28 md:pt-32 lg:px-8 lg:pt-36 xl:pt-40">
 
+        <div className="group relative w-fit max-w-full overflow-hidden rounded-full border border-white/15 bg-white/10 px-3 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.22)] backdrop-blur-2xl transition-all duration-300 hover:border-white/25 hover:bg-white/15 sm:px-5 sm:py-2.5">
 
-      <div className="relative  flex-col justify-start items-center z-10 mx-auto flex w-full max-w-[1750px]  px-4 pb-10 pt-[3.5em] sm:px-6 lg:px-8">
+          {/* subtle gradient glow */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#D4A373]/10 via-white/5 to-[#D4A373]/10 opacity-80"></div>
 
+          <div className="relative flex items-center justify-center gap-2 sm:gap-3">
 
-        <div className="inline-flex items-center rounded-full border border-white/10 bg-white/10 px-4 py-2 shadow-[0_10px_30px_rgba(0,0,0,0.14)] backdrop-blur-2xl sm:px-5 sm:py-2.5">
+            {/* animated dot */}
+            <span className="relative flex h-2 w-2 shrink-0 sm:h-2.5 sm:w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#D4A373]/60 opacity-75"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#D4A373] sm:h-2.5 sm:w-2.5"></span>
+            </span>
 
-          <span className="mr-2 h-2 w-2 rounded-full bg-[#D4A373]"></span>
+            {/* text */}
+            <span className="text-center text-[8px] font-semibold uppercase tracking-[0.22em] text-white/90 sm:text-[10px] sm:tracking-[0.3em] md:text-[11px] lg:text-xs">
+              Bling By Gunjan Luxe Salon
+            </span>
 
-          <span className="text-[9px] font-bold uppercase tracking-[0.38em] text-white/85 sm:text-[10px]">
-            Bling By Gunjan Luxe Salon
-          </span>
-
+          </div>
         </div>
 
         <h1 className="my-5 text-center font-black leading-[1.2]  text-white text-[2.5rem] sm:text-[3.5rem] md:text-[4.4rem] lg:text-[5.2rem] xl:text-[6rem] 2xl:text-[6.6rem]">
